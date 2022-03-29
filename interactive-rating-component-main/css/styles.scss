@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;1,700&display=swap');
+/* @font-face {
+      font-family: 'Overpass';
+      src: url('https://fonts.google.com/specimen/Overpass') format('truetype');
+  } */
+
+.center {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+}
+
+body {margin: 0;}
+.layout {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+      background-color: hsl(216, 12%, 8%);
+
+      & .card {
+            width: 350px;
+            height: 350px;
+            padding: 2rem;
+            background-color: #1f2630;
+            border-radius: 35px;
+            color: hsl(0, 0%, 100%);
+            font-family: 'Overpass', sans-serif;
+            font-size: 15px;
+
+            & .star {
+                  width: 15px;
+                  height: 15px;
+                  display: flex; 
+                  padding: 15px;
+                  border-radius: 50px;
+                  background-color: #262f38; 
+            }
+
+            & h1 {
+                  font-size: 1.8rem;
+                  font-weight: 700;
+                  margin-top: 2rem;
+            }
+
+            & p {
+                  color: hsl(217, 12%, 63%);
+                  line-height: 1.4rem;
+                  margin-top: -0.2rem;
+            }
+
+            & form {
+                  margin-top: -0.5rem;
+
+            & ul {
+                        display: flex;
+                        justify-content: space-between;
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+
+                        & li {
+                              display: inline-block;
+
+                              & input {
+                                    visibility:hidden;
+                                    }
+
+                              &  label {
+                                    cursor: pointer;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    width: 54px;
+                                    height: 54px;
+                                    border-radius: 50%;
+                                    background: #272e38;
+                                    color: hsl(217, 12%, 63%);
+                                    line-height: 50px;
+                                    font-weight: 700;
+                                    font-size: 1rem;
+
+                                    &:hover {
+                                          background-color: hsl(25, 97%, 53%);
+                                          color: hsl(0, 0%, 100%);
+                                    }
+                                    }
+
+                              &  input:checked + label {
+                                    color: hsl(0, 0%, 100%);
+                                    background-color: hsl(217, 12%, 63%);
+                                    }
+                  }
+                  
+                  }
+            }
+
+            & input[type=submit] {
+                  width: 100%;
+                  padding: 1rem;
+                  margin-top: 2rem;
+                  border-radius: 50px;
+                  border: 0;
+                  background-color: hsl(25, 97%, 53%);
+                  color: hsl(0, 0%, 100%);
+                  letter-spacing: 0.2rem;
+                  cursor: pointer;
+                  
+                  &:hover {
+                        background-color: hsl(0, 0%, 100%);
+                        color: hsl(25, 97%, 53%);
+                  }
+            }
+      }
+
+      // Card Thank You
+      & .card-thk {
+            width: 350px;
+            height: 350px;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            background-color: #1f2630;
+            border-radius: 35px;
+            color: hsl(0, 0%, 100%);
+            font-family: 'Overpass', sans-serif;
+            font-size: 15px;
+
+            & span {
+                  margin-top: 2rem;
+                  padding: 6px 16px;
+                  background-color: #272e38;
+                  color: hsl(25, 97%, 53%);
+                  border-radius: 50px;
+            }
+            
+            & h1 {
+                  font-size: 1.8rem;
+                  font-weight: 700;
+                  margin-top: 2rem;
+            }
+
+            & p {
+                  color: hsl(217, 12%, 63%);
+                  line-height: 1.4rem;
+                  margin-top: -0.2rem;
+            }
+      }
+
+      & .attribution  {
+            position: absolute;
+            bottom: 1rem;
+            color: #2e3540;
+            
+
+            & a {
+                  color: #363e4b;
+                  text-decoration: none;
+
+                  &:hover {
+                        text-decoration: underline;
+                  }
+            }
+      }
+
+}
+
+@media screen and (max-width: 475px) {
+      .card, .card-thk {
+            transform: scale(0.9);
+      }
+      .card-thk p br {
+            display: none;
+      }
+      .attribution {
+            width: 80%;
+            text-align: center;
+
+            & span {
+                  display: block;
+            }
+      }
+    }
+    @media screen and (max-width: 390px) {
+      .card, .card-thk {
+            width: 310px !important;
+      }
+    }

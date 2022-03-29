@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;1,700&display=swap");
+/* @font-face {
+      font-family: 'Overpass';
+      src: url('https://fonts.google.com/specimen/Overpass') format('truetype');
+  } */
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+}
+
+.layout {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #121417;
+}
+
+.layout .card {
+  width: 350px;
+  height: 350px;
+  padding: 2rem;
+  background-color: #1f2630;
+  border-radius: 35px;
+  color: white;
+  font-family: 'Overpass', sans-serif;
+  font-size: 15px;
+}
+
+.layout .card .star {
+  width: 15px;
+  height: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+  border-radius: 50px;
+  background-color: #262f38;
+}
+
+.layout .card h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+.layout .card p {
+  color: #959eac;
+  line-height: 1.4rem;
+  margin-top: -0.2rem;
+}
+
+.layout .card form {
+  margin-top: -0.5rem;
+}
+
+.layout .card form ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.layout .card form ul li {
+  display: inline-block;
+}
+
+.layout .card form ul li input {
+  visibility: hidden;
+}
+
+.layout .card form ul li label {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: #272e38;
+  color: #959eac;
+  line-height: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.layout .card form ul li label:hover {
+  background-color: #fb7413;
+  color: white;
+}
+
+.layout .card form ul li input:checked + label {
+  color: white;
+  background-color: #959eac;
+}
+
+.layout .card input[type=submit] {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 50px;
+  border: 0;
+  background-color: #fb7413;
+  color: white;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+}
+
+.layout .card input[type=submit]:hover {
+  background-color: white;
+  color: #fb7413;
+}
+
+.layout .card-thk {
+  width: 350px;
+  height: 350px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background-color: #1f2630;
+  border-radius: 35px;
+  color: white;
+  font-family: 'Overpass', sans-serif;
+  font-size: 15px;
+}
+
+.layout .card-thk span {
+  margin-top: 2rem;
+  padding: 6px 16px;
+  background-color: #272e38;
+  color: #fb7413;
+  border-radius: 50px;
+}
+
+.layout .card-thk h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+.layout .card-thk p {
+  color: #959eac;
+  line-height: 1.4rem;
+  margin-top: -0.2rem;
+}
+
+.layout .attribution {
+  position: absolute;
+  bottom: 1rem;
+  color: #2e3540;
+}
+
+.layout .attribution a {
+  color: #363e4b;
+  text-decoration: none;
+}
+
+.layout .attribution a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 475px) {
+  .card, .card-thk {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  .card-thk p br {
+    display: none;
+  }
+  .attribution {
+    width: 80%;
+    text-align: center;
+  }
+  .attribution span {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .card, .card-thk {
+    width: 310px !important;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
